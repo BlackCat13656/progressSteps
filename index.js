@@ -33,4 +33,10 @@ function update() {
       circle.classList.remove("active");
     }
   });
+
+  const actives = document.querySelectorAll(".active");
+
+  //FIX THIS THING PRETTIER PARENTHESIS
+  progress.style.width =
+    ((actives.length - 1) / (circles.length - 1)) * 100 + "%";
 }
